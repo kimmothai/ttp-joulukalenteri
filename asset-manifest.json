@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/ttp-joulukalenteri/static/css/main.78adcfdf.css",
+    "main.css": "/ttp-joulukalenteri/static/css/main.2bb191ee.css",
     "main.js": "/ttp-joulukalenteri/static/js/main.db48cad8.js",
+    "static/media/Christmas Holiday.woff": "/ttp-joulukalenteri/static/media/Christmas Holiday.cea51a7b0be9c7fa65c0.woff",
     "index.html": "/ttp-joulukalenteri/index.html",
-    "main.78adcfdf.css.map": "/ttp-joulukalenteri/static/css/main.78adcfdf.css.map",
+    "main.2bb191ee.css.map": "/ttp-joulukalenteri/static/css/main.2bb191ee.css.map",
     "main.db48cad8.js.map": "/ttp-joulukalenteri/static/js/main.db48cad8.js.map"
   },
   "entrypoints": [
-    "static/css/main.78adcfdf.css",
+    "static/css/main.2bb191ee.css",
     "static/js/main.db48cad8.js"
   ]
 }
