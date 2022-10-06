@@ -1,5 +1,6 @@
 {
   "name": "ttp-joulukalenteri",
+  "homepage": "https://kimmothai.github.io/ttp-joulukalenteri",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
