@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.78adcfdf.css",
-    "main.js": "/static/js/main.db48cad8.js",
-    "index.html": "/index.html",
-    "main.78adcfdf.css.map": "/static/css/main.78adcfdf.css.map",
-    "main.db48cad8.js.map": "/static/js/main.db48cad8.js.map"
+    "main.css": "/ttp-joulukalenteri/static/css/main.78adcfdf.css",
+    "main.js": "/ttp-joulukalenteri/static/js/main.db48cad8.js",
+    "index.html": "/ttp-joulukalenteri/index.html",
+    "main.78adcfdf.css.map": "/ttp-joulukalenteri/static/css/main.78adcfdf.css.map",
+    "main.db48cad8.js.map": "/ttp-joulukalenteri/static/js/main.db48cad8.js.map"
   },
   "entrypoints": [
     "static/css/main.78adcfdf.css",
