@@ -9,12 +9,15 @@ export default function Footer() {
     'Musclevania Bronicles',
     'Bodybuilders Against Tipping',
     'Killer Instinct MMO',
-    'Edward Gordohands'
+    'Edward Gordohands',
+    'Corporate simp',
+    'Terrence Bogard, PhD',
+    'Ninja Gaiden Sigma Male'
   ]
   return (
     <footer className='footer p-3 m-3 is-size-4 is-size-4-mobile'>
       <p className='text-end'>
-        (c) {names[Math.floor(Math.random() * names.length)]}, 2022
+        (c) {names[Math.floor(Math.random() * names.length)]} - 2022
       </p>
     </footer>
   )

@@ -1,9 +1,14 @@
 import 'bulma/css/bulma.css'
 import { useState } from 'react'
 import format from 'date-fns/format'
-import bffCool from '../images/bff.jpg'
-import setuppi from '../images/se_olikin_setuppi.png'
 import './Calendar.css'
+
+// Image imports
+import bff from '../images/bff.jpg'
+import setuppi from '../images/se_olikin_setuppi.png'
+import respect from '../images/respect.jpg'
+import teheran from '../images/teheran.png'
+import jalis from '../images/Jalisquotes.png'
 
 // Types
 type Video = string
@@ -55,8 +60,8 @@ function closeAllModals() {
 
 function ModalTopic({ media }: { media: Topic }) {
   return (
-    <p className='is-size-4 is-align-self-center py-4' key={media}>
-      Topic {media}
+    <p className='is-size-4 is-align-self-center py-4 px-2' key={media}>
+      {media}
     </p>
   )
 }
@@ -217,36 +222,125 @@ export default function Calendar() {
 
   const data: Data[] = [
     {
-      day: 31,
-      topic:
-        '1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam eleifend mi in nulla.',
-      mediaType: 'text'
-    },
-    {
-      day: 2,
-      topic: '_ykAXB3JFy4',
+      day: 1,
+      topic: '-Ea_1vStswA',
       mediaType: 'video'
     },
     {
+      day: 2,
+      topic: 'Mikä oli ensimmäinen tappelupelisi?',
+      mediaType: 'text'
+    },
+    {
       day: 3,
-      topic: setuppi,
+      topic: respect,
       mediaType: 'image'
     },
     {
       day: 4,
-      topic:
-        '4Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam eleifend mi in nulla.',
+      topic: 'Esittele mainisi ja miksi päädyit tähän/näihin',
       mediaType: 'text'
     },
     {
       day: 5,
-      topic: 'n2wjjPmjIOk',
+      topic: '44depsi7b1E',
       mediaType: 'video'
     },
     {
-      day: 30,
-      topic: bffCool,
+      day: 6,
+      topic: 'Hienoin liike tappelupeleissä on…?',
+      mediaType: 'text'
+    },
+    {
+      day: 7,
+      topic: 'Mitkä ovat parhaat pelaamasi pelit tänä vuonna?',
+      mediaType: 'text'
+    },
+    {
+      day: 8,
+      topic: bff,
       mediaType: 'image'
+    },
+    {
+      day: 9,
+      topic: 'vpYdEjvAg3k',
+      mediaType: 'video'
+    },
+    {
+      day: 10,
+      topic: '_ykAXB3JFy4',
+      mediaType: 'video'
+    },
+    {
+      day: 11,
+      topic: 'aZGKXhkzkAY',
+      mediaType: 'video'
+    },
+    {
+      day: 12,
+      topic: jalis,
+      mediaType: 'image'
+    },
+    {
+      day: 13,
+      topic: 'Mitä ohjainta käytät ja aiotko siirtyä toiseen?',
+      mediaType: 'text'
+    },
+    {
+      day: 14,
+      topic: 'Jaa vuoden suosikkivideosi',
+      mediaType: 'text'
+    },
+    {
+      day: 15,
+      topic: 'Päivän historia: Mitä sanoit aiempana vuonna tähän aikaan?',
+      mediaType: 'text'
+    },
+    {
+      day: 16,
+      topic:
+        'Flex Friday: Mitkä ovat parhaat saavutuksesi tänä vuonna taistelupeleissä?',
+      mediaType: 'text'
+    },
+    {
+      day: 17,
+      topic: teheran,
+      mediaType: 'image'
+    },
+    {
+      day: 18,
+      topic: 'Päivän musiikkivalinta',
+      mediaType: 'text'
+    },
+    {
+      day: 19,
+      topic: 'Grapplerit: puolesta vai vastaan?',
+      mediaType: 'text'
+    },
+    {
+      day: 20,
+      topic: 'Tee tier-lista jouluruoista',
+      mediaType: 'text'
+    },
+    {
+      day: 21,
+      topic: 'Kiitä ja/tai anna tunnustusta toiselle kellarilaiselle',
+      mediaType: 'text'
+    },
+    {
+      day: 22,
+      topic: `"They say the definition of insanity is repeating the same option over and over again and expecting different results. But hear me out - there's no way they'll expect me to do it again." - Deep Leffen Bot`,
+      mediaType: 'text'
+    },
+    {
+      day: 23,
+      topic: setuppi,
+      mediaType: 'image'
+    },
+    {
+      day: 24,
+      topic: 'Hyvää joulua! Mukavin muistosi Turpakellarista?',
+      mediaType: 'text'
     }
   ]
 
