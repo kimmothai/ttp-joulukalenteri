@@ -1,7 +1,24 @@
 export default function Footer() {
+  const names = [
+    'Fyrkka-Pekka Setelius',
+    'xX_PIG_DESTROYER_Xx',
+    'Jeff Pesos',
+    'LinkedIn Pöhinä Ukko',
+    'Kimmo Thai',
+    '"No thx" Jefferson',
+    'Musclevania Bronicles',
+    'Bodybuilders Against Tipping',
+    'Killer Instinct MMO',
+    'Edward Gordohands',
+    'Corporate simp',
+    'Terrence Bogard, PhD',
+    'Ninja Gaiden Sigma Male'
+  ]
   return (
-    <footer className='footer container-fluid p-3 m-3'>
-      <p className='text-end'>Kimmo Thai, 2022</p>
+    <footer className='footer p-3 m-3 is-size-4 is-size-4-mobile'>
+      <p className='text-end'>
+        (c) {names[Math.floor(Math.random() * names.length)]} - 2022
+      </p>
     </footer>
   )
 }
