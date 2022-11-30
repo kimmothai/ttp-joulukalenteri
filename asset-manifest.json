@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/ttp-joulukalenteri/static/css/main.47502904.css",
-    "main.js": "/ttp-joulukalenteri/static/js/main.db48cad8.js",
+    "main.css": "/ttp-joulukalenteri/static/css/main.6147dd0a.css",
+    "main.js": "/ttp-joulukalenteri/static/js/main.65f9c516.js",
+    "static/media/Jalisquotes.png": "/ttp-joulukalenteri/static/media/Jalisquotes.8710c4447c9a1d05460a.png",
+    "static/media/bff.jpg": "/ttp-joulukalenteri/static/media/bff.b4cc3dbea0d79e27377e.jpg",
+    "static/media/se_olikin_setuppi.png": "/ttp-joulukalenteri/static/media/se_olikin_setuppi.aac23ad6e571b1eea5ba.png",
+    "static/media/respect.jpg": "/ttp-joulukalenteri/static/media/respect.de66db99ab2d438e9b35.jpg",
     "static/media/Christmas Holiday.woff": "/ttp-joulukalenteri/static/media/Christmas Holiday.cea51a7b0be9c7fa65c0.woff",
+    "static/media/teheran.png": "/ttp-joulukalenteri/static/media/teheran.92ccc77cc415e0b7dece.png",
     "index.html": "/ttp-joulukalenteri/index.html",
-    "main.47502904.css.map": "/ttp-joulukalenteri/static/css/main.47502904.css.map",
-    "main.db48cad8.js.map": "/ttp-joulukalenteri/static/js/main.db48cad8.js.map"
+    "main.6147dd0a.css.map": "/ttp-joulukalenteri/static/css/main.6147dd0a.css.map",
+    "main.65f9c516.js.map": "/ttp-joulukalenteri/static/js/main.65f9c516.js.map"
   },
   "entrypoints": [
-    "static/css/main.47502904.css",
-    "static/js/main.db48cad8.js"
+    "static/css/main.6147dd0a.css",
+    "static/js/main.65f9c516.js"
   ]
 }
