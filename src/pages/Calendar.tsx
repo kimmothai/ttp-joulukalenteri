@@ -1,5 +1,5 @@
 import 'bulma/css/bulma.css'
-import { useState } from 'react'
+import { useState, Fragment } from 'react'
 import format from 'date-fns/format'
 import './Calendar.css'
 
@@ -56,6 +56,9 @@ function closeAllModals() {
   })
 }
 
+// Variables
+const today = Number(format(new Date(), 'd'))
+
 // Components
 
 function ModalTopic({ media }: { media: Topic }) {
@@ -90,7 +93,6 @@ function ModalImage({ media }: { media: Image }) {
 
 function Door(props: Data) {
   const { day, topic, mediaType } = props
-  const today = Number(format(new Date(), 'd'))
 
   const [isActive, setIsActive] = useState(false)
   const [locked, setLocked] = useState(String(day))
@@ -108,7 +110,7 @@ function Door(props: Data) {
   return (
     <div
       className={`column has-text-centered is-3-desktop block door-${day}`}
-      key={`column-${day}`}
+      key={`door-${day}`}
     >
       <button
         className={`door-front is-size-2 ${day > today ? 'locked' : ''} ${
@@ -119,7 +121,7 @@ function Door(props: Data) {
         onClick={() =>
           handleClick(document.getElementById(`doorModal-${day}`)!)
         }
-        key={day}
+        key={`door-front-button-${day}`}
       >
         <p className={`${day === new Date().getDate() ? 'today' : ''}`}>
           {day === new Date().getDate() ? 'Avaa' : `${locked}`}
@@ -346,6 +348,7 @@ export default function Calendar() {
 
   const chunks = chunk(data, 4)
   const rows = addKeys(chunks)
+
   return (
     <div className='calendar my-6'>
       <h1 className='p-6 is-size-3-desktop is-size-4-mobile has-text-centered'>
@@ -353,9 +356,13 @@ export default function Calendar() {
       </h1>
       {rows.map((row) => {
         return (
-          <div className='columns is-centered mt-3' key={`rowIndex-${row.key}`}>
+          <div className='columns is-centered mt-3' key={row.key}>
             {row.columns.map((column: Data) => {
-              return <Door {...column} />
+              return (
+                <Fragment key={column.day}>
+                  <Door {...column} />
+                </Fragment>
+              )
             })}
           </div>
         )
